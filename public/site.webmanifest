@@ -1,7 +1,7 @@
 {
-  "name": "{{TOOL_NAME}}",
-  "short_name": "{{TOOL_SHORT_NAME}}",
-  "description": "{{TOOL_DESCRIPTION}}",
+  "name": "Color Format Converter",
+  "short_name": "Color Converter",
+  "description": "Free online color format converter. Convert colors between HEX, RGB, HSL, HWB, and OKLCH formats instantly.",
   "icons": [
     {
       "src": "/favicon.svg",
@@ -22,7 +22,7 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "{{BRAND_COLOR}}",
+  "theme_color": "#ec4899",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",

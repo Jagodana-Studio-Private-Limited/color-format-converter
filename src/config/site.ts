@@ -1,27 +1,35 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "Color Format Converter",
+  title: "Color Format Converter - Convert Colors Between HEX, RGB, HSL, HWB & OKLCH",
+  description:
+    "Free online color format converter. Convert colors between HEX, RGB, HSL, HWB, and OKLCH formats instantly. Visual color picker, one-click copy, and real-time preview. 100% client-side.",
+  url: "https://color-format-converter.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
+  headerIcon: "Palette", // lucide-react icon name
   // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
   // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  brandAccentColor: "#a855f7", // hex accent for OG image gradient (must match --brand-accent in globals.css)
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "color converter",
+    "hex to rgb",
+    "rgb to hsl",
+    "color format converter",
+    "oklch converter",
+    "hwb converter",
+    "css color converter",
+    "color picker tool",
+    "hex to hsl",
+    "color code converter",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#ec4899", // used in manifest and meta tags
 
   // Branding
   creator: "Jagodana",
@@ -36,46 +44,51 @@ export const siteConfig = {
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github:
+      "https://github.com/Jagodana-Studio-Private-Limited/color-format-converter",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "Color Format Converter is a free tool by Jagodana that converts colors between HEX, RGB, HSL, HWB, and OKLCH formats. 100% client-side processing.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "HEX, RGB, HSL, HWB, OKLCH",
+      "Visual Color Picker",
+      "Real-Time Preview",
+      "One-Click Copy",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free Color Format Converter",
+    titleLine1: "Convert Colors Between",
+    titleGradient: "Any Format Instantly",
+    subtitle:
+      "Transform colors between HEX, RGB, HSL, HWB, and OKLCH with a visual picker. One-click copy, real-time preview, and zero server processing — everything runs in your browser.",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🎨",
+      title: "Visual Color Picker",
+      description:
+        "Pick any color visually and see all format conversions instantly.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🔄",
+      title: "Multi-Format Support",
+      description:
+        "Convert between HEX, RGB, HSL, HWB, and modern OKLCH formats.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "📋",
+      title: "One-Click Copy",
+      description: "Copy any color format to clipboard with a single click.",
     },
   ],
 
@@ -121,29 +134,45 @@ export const siteConfig = {
 
   // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Enter a Color",
+      text: "Type a color value in any supported format (HEX, RGB, HSL, HWB, or OKLCH) or use the visual color picker.",
+      url: "",
+    },
+    {
+      name: "View Conversions",
+      text: "See the color instantly converted to all supported formats with a live preview swatch.",
+      url: "",
+    },
+    {
+      name: "Copy the Result",
+      text: "Click the copy button next to any format to copy the color value to your clipboard.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M", // ISO 8601 duration
 
   // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What color formats are supported?",
+      answer:
+        "Color Format Converter supports HEX, RGB, RGBA, HSL, HSLA, HWB, and OKLCH color formats. You can input a color in any format and get conversions to all others.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Is my data processed on a server?",
+      answer:
+        "No. All color conversions happen entirely in your browser. No data is sent to any server.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "What is OKLCH?",
+      answer:
+        "OKLCH is a modern CSS color format that provides perceptually uniform colors. It uses Lightness, Chroma, and Hue components, making it easier to create consistent color palettes.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Can I use the visual color picker?",
+      answer:
+        "Yes! Click the color swatch to open a native color picker. The selected color will be automatically converted to all supported formats.",
     },
   ],
 
@@ -151,24 +180,13 @@ export const siteConfig = {
   // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title:
+        "Color Format Converter - Convert Colors Between HEX, RGB, HSL, HWB & OKLCH",
+      description:
+        "Free online color format converter. Convert colors between HEX, RGB, HSL, HWB, and OKLCH formats instantly. Visual color picker, one-click copy, and real-time preview. 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
